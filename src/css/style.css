@@ -52,3 +52,25 @@
     from { opacity: 0.4; }
     to { opacity: 1; }
 }
+
+/* BOTÕES DE TEMA */
+.theme-buttons {
+   position: absolute;
+   bottom: 30px;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   gap: 15px;
+}
+.btn-theme {
+   padding: 12px 25px;
+   background-color: #d4af37;
+   color: #1a1a1a;
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: bold;
+}
+.btn-theme:hover {
+   background-color: #c19b2e;
+}
