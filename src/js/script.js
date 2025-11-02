@@ -19,3 +19,21 @@ function slideShow() {
     setTimeout(slideShow, tempo);
 }
 slideShow();
+
+//========== FUNÇÃO MUDAR TEMA ==========
+
+let btnClaro = document.getElementById("tema-claro");
+let btnEscuro = document.getElementById("tema-escuro");
+let btnMisto = document.getElementById("tema-misto");
+
+btnClaro.addEventListener("click", function() {
+    document.body.className = "tema-claro";
+});
+
+btnEscuro.addEventListener("click", function() {
+    document.body.className = "tema-escuro";
+});
+
+btnMisto.addEventListener("click", function() {
+    document.body.className = "tema-misto";
+});

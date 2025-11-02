@@ -1,3 +1,15 @@
+/* RESET E CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
 /* ANIMAÇÃO PARA NOSSO SLIDESHOW */
 
 .slideshow-container {
@@ -61,6 +73,7 @@
    transform: translateX(-50%);
    display: flex;
    gap: 15px;
+   z-index: 10;
 }
 .btn-theme {
    padding: 12px 25px;
@@ -70,7 +83,96 @@
    cursor: pointer;
    font-size: 16px;
    font-weight: bold;
+   border-radius: 5px;
+   transition: background-color 0.3s;
 }
 .btn-theme:hover {
    background-color: #c19b2e;
+}
+/* ========== TEMAS ========== */
+
+/* Transição suave entre temas */
+body, header, .card, section {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Tema Claro */
+body.tema-claro {
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+}
+
+body.tema-claro header {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+body.tema-claro .card {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.tema-claro section {
+    background-color: #ffffff;
+}
+
+/* Tema Escuro */
+body.tema-escuro {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
+
+body.tema-escuro header {
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+}
+
+body.tema-escuro .card {
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.tema-escuro section {
+    background-color: #1a1a1a;
+}
+
+body.tema-escuro .btn-theme {
+    background-color: #d4af37;
+    color: #1a1a1a;
+}
+
+/* Tema Misto (Vinho/Roxo) */
+body.tema-misto {
+    background-color: #2d1b3d;
+    color: #f5f5f5;
+}
+
+body.tema-misto header {
+    background-color: #4a1942;
+    color: #f5f5f5;
+}
+
+body.tema-misto .card {
+    background-color: #3d2547;
+    color: #f5f5f5;
+    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.2);
+}
+
+body.tema-misto section {
+    background-color: #2d1b3d;
+}
+
+body.tema-misto .btn-theme {
+    background-color: #d4af37;
+    color: #1a1a1a;
+}
+
+body.tema-misto .btn-theme:hover {
+    background-color: #e6c34a;
+}
+
+body.tema-misto .textoSlide {
+    background: rgba(74, 25, 66, 0.7);
 }
