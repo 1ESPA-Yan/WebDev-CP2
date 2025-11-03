@@ -20,9 +20,7 @@ body {
     z-index: 100;
 }
 
-.container-header {
-    max-width: 1200px;
-    margin: 0 auto;
+.container-header { 
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -39,7 +37,7 @@ body {
 .logo img {
     height: 100%;
     width: 100%;
-    max-width: 15%;
+    max-width: 30%;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #d4af37;
@@ -549,4 +547,64 @@ body.tema-claro .form-group textarea {
     background-color: #ffffff; /* Fundo claro para os campos */
     color: #1a1a1a;           /* Texto escuro ao digitar */
     border: 2px solid #ddd;
+}
+
+
+
+
+/* ========== POSICIONAMENTO BOTÕES DE TEMA (HEADER) ========== */
+
+/* Garante que a logo mantenha o layout original */
+.logo {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Posiciona os botões de tema ao lado do menu */
+.theme-buttons {
+    position: static;
+    transform: none;
+    left: auto;
+    bottom: auto;
+    z-index: auto;
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+/* Ajusta o container <nav> para incluir o menu e os botões */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+/* Ajuste de tamanho dos botões no header */
+.btn-theme {
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+/*CORREÇÃO CORES DO FOOTER */
+
+.footer-section p {
+    color: #ccc;
+}
+
+
+.social-links a {
+    color: #fff;
+}
+
+
+.copyright {
+    color: #aaa; /
 }
